@@ -1,0 +1,299 @@
+<title>Music player</title>
+<style>
+    .music-player {
+        transition: 0.3s ease;
+    }
+
+    /* Active / currently playing card */
+    .music-player.playing {
+        transform: scale(1.05);
+        box-shadow: 0 0 0px rgba(70, 120, 255, 0.8);
+    }
+
+    .music-player.playing .card {
+        animation: musicGlow 1.5s infinite alternate;
+    }
+
+    .music-player.playing img {
+        animation: rotateAlbum 4s linear infinite;
+        border-radius: 0px;
+    }
+
+    @keyframes musicGlow {
+        from {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        to {
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    @keyframes rotateAlbum {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .playing-text {
+        display: none;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+
+    .music-player.playing .playing-text {
+        display: block;
+    }
+</style>
+
+<body>
+    <div>
+        <h1 style="text-align: center;color: #a1b5e3;">Music Player</h1>
+
+        <div
+            style="margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; padding: 20px; gap: 50px;">
+            <div class="music-player">
+                <div class="card"
+                    style="width: 18rem; justify-content: center; text-align: center; display: flex; flex-direction: column;    margin-top: 10%; border:2px; background-color: #a1b5e3; color: white; border-radius: 10px; box-shadow:  8px 4px 8px rgba(0, 0, 0, 0.2); width: 300px; height: 400px; ">
+                    <h3 class="card-title">Let ME Love You </h3>
+                    <img src="
+                https://tse4.mm.bing.net/th/id/OIP.kEAm2dtU6XpBf-Jt70NqVwHaHY?w=150&h=150&c=6&r=0&o=7&pid=1.7&rm=3"
+                        class="card"
+                        style="margin: auto; margin-top: 0px; width: 150px; height: 150px; box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+
+                        <audio controls style="width: 90%; margin-top: -120px;">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+            <div class="music-player">
+                <div class="card"
+                    style="width: 18rem; justify-content: center; text-align: center; display: flex; flex-direction: column ;  margin-top: 10%; border:2px; background-color: #a1b5e3; color: white; border-radius: 10px; box-shadow:  8px 4px 8px rgba(0, 0, 0, 0.2); width: 300px; height: 400px; ">
+                    <h3 class="card-title">Let ME Love You </h3>
+                    <img src="
+                https://tse4.mm.bing.net/th/id/OIP.kEAm2dtU6XpBf-Jt70NqVwHaHY?w=150&h=150&c=6&r=0&o=7&pid=1.7&rm=3"
+                        class="card"
+                        style="margin: auto; margin-top: 0px; width: 150px; height: 150px; box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                        <audio controls style="width: 90%; margin-top:-120px;">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+            <div class="music-player">
+                <div class="card"
+                    style="width: 18rem; justify-content: center; text-align: center; display: flex; flex-direction: column ;  margin-top: 10%; border:2px; background-color: #a1b5e3; color: white; border-radius: 10px; box-shadow:  8px 4px 8px rgba(0, 0, 0, 0.2); width: 300px; height: 400px; ">
+                    <h3 class="card-title">Let ME Love You </h3>
+                    <img src="
+                https://tse4.mm.bing.net/th/id/OIP.kEAm2dtU6XpBf-Jt70NqVwHaHY?w=150&h=150&c=6&r=0&o=7&pid=1.7&rm=3"
+                        class="card"
+                        style="margin: auto; margin-top: 0px; width: 150px; height: 150px; box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                        <audio controls style="width: 90%; margin-top:-120px;">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            style="margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; padding: 20px; gap: 50px;">
+            <div class="music-player">
+                <div class="card"
+                    style="width: 18rem; justify-content: center; text-align: center; display: flex; flex-direction: column;    margin-top: 10%; border:2px; background-color: #a1b5e3; color: white; border-radius: 10px; box-shadow:  8px 4px 8px rgba(0, 0, 0, 0.2); width: 300px; height: 400px; ">
+                    <h3 class="card-title">Let ME Love You </h3>
+                    <img src="
+                https://tse4.mm.bing.net/th/id/OIP.kEAm2dtU6XpBf-Jt70NqVwHaHY?w=150&h=150&c=6&r=0&o=7&pid=1.7&rm=3"
+                        class="card"
+                        style="margin: auto; margin-top: 0px; width: 150px; height: 150px; box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                        <audio controls style="width: 90%; margin-top: -120px;">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+            <div class="music-player">
+                <div class="card"
+                    style="width: 18rem; justify-content: center; text-align: center; display: flex; flex-direction: column ;  margin-top: 10%; border:2px; background-color: #a1b5e3; color: white; border-radius: 10px; box-shadow:  8px 4px 8px rgba(0, 0, 0, 0.2); width: 300px; height: 400px; ">
+                    <h3 class="card-title">Let ME Love You </h3>
+                    <img src="
+                https://tse4.mm.bing.net/th/id/OIP.kEAm2dtU6XpBf-Jt70NqVwHaHY?w=150&h=150&c=6&r=0&o=7&pid=1.7&rm=3"
+                        class="card"
+                        style="margin: auto; margin-top: 0px; width: 150px; height: 150px; box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                        <audio controls style="width: 90%; margin-top: -120px;">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+            <div class="music-player">
+                <div class="card"
+                    style="width: 18rem; justify-content: center; text-align: center; display: flex; flex-direction: column ;  margin-top: 10%; border:2px; background-color: #a1b5e3; color: white; border-radius: 10px; box-shadow:  8px 4px 8px rgba(0, 0, 0, 0.2); width: 300px; height: 400px; ">
+                    <h3 class="card-title">Let ME Love You </h3>
+                    <img src="
+                https://tse4.mm.bing.net/th/id/OIP.kEAm2dtU6XpBf-Jt70NqVwHaHY?w=150&h=150&c=6&r=0&o=7&pid=1.7&rm=3"
+                        class="card"
+                        style="margin: auto; margin-top: 0px; width: 150px; height: 150px; box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                        <audio controls style="width: 90%; margin-top: -120px;">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            style="margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; padding: 20px; gap: 50px;">
+            <div class="music-player">
+                <div class="card"
+                    style="width: 18rem; justify-content: center; text-align: center; display: flex; flex-direction: column;    margin-top: 10%; border:2px; background-color: #a1b5e3; color: white; border-radius: 10px; box-shadow:  8px 4px 8px rgba(0, 0, 0, 0.2); width: 300px; height: 400px; ">
+                    <h3 class="card-title">Let ME Love You </h3>
+                    <img src="
+                https://tse4.mm.bing.net/th/id/OIP.kEAm2dtU6XpBf-Jt70NqVwHaHY?w=150&h=150&c=6&r=0&o=7&pid=1.7&rm=3"
+                        class="card"
+                        style="margin: auto; margin-top: 0px; width: 150px; height: 150px; box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                        <audio controls style="width: 90%; margin-top: -120px;">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+            <div class="music-player">
+                <div class="card"
+                    style="width: 18rem; justify-content: center; text-align: center; display: flex; flex-direction: column ;  margin-top: 10%; border:2px; background-color: #a1b5e3; color: white; border-radius: 10px; box-shadow:  8px 4px 8px rgba(0, 0, 0, 0.2); width: 300px; height: 400px; ">
+                    <h3 class="card-title">Let ME Love You </h3>
+                    <img src="
+                https://tse4.mm.bing.net/th/id/OIP.kEAm2dtU6XpBf-Jt70NqVwHaHY?w=150&h=150&c=6&r=0&o=7&pid=1.7&rm=3"
+                        class="card"
+                        style="margin: auto; margin-top: 0px; width: 150px; height: 150px; box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                        <audio controls style="width: 90%; margin-top: -120px;">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+            <div class="music-player">
+                <div class="card"
+                    style="width: 18rem; justify-content: center; text-align: center; display: flex; flex-direction: column ;  margin-top: 10%; border:2px; background-color: #a1b5e3; color: white; border-radius: 10px; box-shadow:  8px 4px 8px rgba(0, 0, 0, 0.2); width: 300px; height: 400px; ">
+                    <h3 class="card-title">Let ME Love You </h3>
+                    <img src="
+                https://tse4.mm.bing.net/th/id/OIP.kEAm2dtU6XpBf-Jt70NqVwHaHY?w=150&h=150&c=6&r=0&o=7&pid=1.7&rm=3"
+                        class="card"
+                        style="margin: auto; margin-top: 0px; width: 150px; height: 150px; box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                        <audio controls style="width: 90%; margin-top: -120px;">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const players = document.querySelectorAll(".music-player");
+
+    players.forEach(player => {
+
+        const audio = player.querySelector("audio");
+
+        // Create "Playing" text
+        const playingText = document.createElement("div");
+        playingText.className = "playing-text";
+        playingText.innerHTML = "🎵 Playing...";
+        player.querySelector(".card-body").appendChild(playingText);
+
+        // When this song starts
+        audio.addEventListener("play", () => {
+
+            // Stop every other song
+            document.querySelectorAll("audio").forEach(otherAudio => {
+                if (otherAudio !== audio) {
+                    otherAudio.pause();
+                }
+            });
+
+            // Remove playing effect from all cards
+            players.forEach(otherPlayer => {
+                otherPlayer.classList.remove("playing");
+            });
+
+            // Add playing effect to current card
+            player.classList.add("playing");
+        });
+
+        // When song is paused
+        audio.addEventListener("pause", () => {
+            player.classList.remove("playing");
+        });
+
+        // When song finishes
+        audio.addEventListener("ended", () => {
+            player.classList.remove("playing");
+        });
+
+    });
+
+    // Get all audio elements
+    const allSongs = document.querySelectorAll("audio");
+
+    allSongs.forEach(song => {
+
+        song.addEventListener("play", function () {
+
+            allSongs.forEach(otherSong => {
+
+                // If another song is playing
+                if (otherSong !== song) {
+
+                    // Pause it
+                    otherSong.pause();
+
+                    // Start it from beginning
+                    otherSong.currentTime = 0;
+                }
+
+            });
+
+        });
+
+    });
+</script>
